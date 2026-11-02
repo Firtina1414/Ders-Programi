@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders Programı ve Günün Ödevleri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ana-kutu">
+        <div class="ust-alan">
+            <h2>Haftalık Planlayıcım</h2>
+            <span class="tarih-etiketi" id="bugun-yazi">Tarih Belirleniyor...</span>
+        </div>
+
+        <!-- Gün Seçim Butonları -->
+        <div class="gun-butonlari">
+            <button class="gun-btn" onclick="gunSec(1)">Pazartesi</button>
+            <button class="gun-btn" onclick="gunSec(2)">Salı</button>
+            <button class="gun-btn" onclick="gunSec(3)">Çarşamba</button>
+            <button class="gun-btn" onclick="gunSec(4)">Perşembe</button>
+            <button class="gun-btn" onclick="gunSec(5)">Cuma</button>
+        </div>
+
+        <div class="panel-alani">
+            <!-- SOL PANEL: GÜNÜN DERSLERİ -->
+            <div class="kart">
+                <h3 id="secili-gun-baslik">📚 Günün Dersleri</h3>
+                <div class="girdi-alani">
+                     <input type="text" id="ders-input" placeholder="Ders adı yaz...">
+                     <button class="btn-ekle-ders" onclick="dersEkle()">+ Ekle</button>
+                </div>
+                <ul id="ders-listesi" class="liste"></ul>
+            </div>
+
+            <!-- SAĞ PANEL: GÜNÜN GÖREVLERİ -->
+            <div class="kart">
+                <h3>✅ Günün Görevleri</h3>
+                <div class="girdi-alani">
+                    <input type="text" id="gorev-input" placeholder="Ödev veya görev yaz...">
+                    <button class="btn-ekle-gorev" onclick="gorevEkle()">+ Ekle</button>
+                </div>
+                <ul id="gorev-listesi" class="liste"></ul>
+            </div>
+        </div> <!-- panel-alani kapanışı -->
+    </div> <!-- ana-kutu kapanışı -->
+
+    <script src="scribt.js"></script>
+</body>
+</html>

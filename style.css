@@ -1,0 +1,192 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body
+{
+    background-color: #f4f7f6;
+    color: #333333;
+    justify-content: center;
+    display: flex;
+    padding: 30px 15px;
+}
+.ana-kutu
+{
+    background-color: #ffffff;
+    max-width: 720px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+    border-top: 6px solid #94c7ec;
+}
+.ust-alan
+{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.ust-alan h2
+{
+    color: #1565c0;
+    margin-bottom: 6px;
+    font-size: 22px;
+}
+.tarih-etiketi
+{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #e3e9fd;
+    color: #2c3e50;
+    border-radius: 20px;
+    padding: 4px 12px;
+}
+.gun-butonlari
+{
+    margin: 18px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.gun-btn
+{
+    padding: 8px 14px;
+    background-color: #e3f2fd;
+    color: #1565c0;
+    border: 1px solid #bbdefb;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.gun-btn:hover
+{
+    color: #e2e8f0;
+}
+.gun-btn.aktif
+{
+    background: #94c7ec;
+    color: white;
+    border-color: #94c7ec;
+}
+.panel-alani
+{
+    display: grid;
+    margin-top: 15px;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr; /*Izgaraları böler*/
+}
+@media(max-width:600px)
+{
+    .panel-alani
+    {
+        grid-template-columns: 1fr;
+    }
+}
+.kart
+{
+    padding: 16px;
+    background: #f0f7ff;
+    border-radius: 12px;
+    border: 1px solid #d0e1fd;
+}
+.kart h3
+{
+    color: #1e40af;
+    font-size: 15px;
+    gap: 6px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;    
+}
+.girdi-alani
+{
+    margin-bottom: 12px;
+    display: flex;
+    gap: 6px;
+}
+.girdi-alani input
+{
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    font-size: 13px;
+    outline: none;
+    flex: 1;
+}
+.btn-ekle-ders
+{
+    background: #94c7ec;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    font-size: 13px;
+    padding: 8px 12px;
+}
+.btn-ekle-gorev
+{
+    background: #e5962e;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    font-size: 13px;
+    padding: 8px 12px;
+}
+.liste
+{
+    list-style: none;
+    max-height: 250px;
+    overflow-y: auto; /*Dikey yükseklik asılırsa yalnızca gerekirse kaydırma butonu açılsın*/
+}
+.liste li
+{
+    padding: 8px 10px;
+    background: #ffffff;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.ders-oge
+{
+    border-left: 3px solid #334155;
+}
+.gorev-sol
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.tamamlandi
+{
+    text-decoration: line-through; /*Üstünü Çize Tamamlanmış işin*/
+    color: #94a3b8;
+}
+.sil-btn
+{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 2px 6px;
+    color: #821c0a;
+}
+.bos-yazi
+{
+    font-size: 12px;
+    color: #94a3b8;
+    text-align: center;
+    padding: 8px;
+}
